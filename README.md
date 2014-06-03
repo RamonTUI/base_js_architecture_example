@@ -14,7 +14,7 @@ Install node modules:
 npm install
 ```
 
-Run *grunt setup* at the command line to download Bower packages, adding your locale 
+Run *grunt setup* at the command line to download Bower packages. Adding your locale with copy the market-specific main.js and settings.js from config to the main js directory.
 
 ```
 grunt setup --locale=de_DE
