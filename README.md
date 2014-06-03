@@ -23,5 +23,17 @@ grunt setup --locale=de_DE
 
 ## Core Architecture
 
-## Creating new modules
 
+
+## Development
+
+### Creating new modules
+
+##To do
+
+- [x] create requirejs-based modular architecture
+- [ ] add sample Angular module
+- [ ] add karma/jasmine tests 
+- [ ] update Grunt with tests
+- [ ] update Grunt to compile SASS
+- [ ] add i18n tests
