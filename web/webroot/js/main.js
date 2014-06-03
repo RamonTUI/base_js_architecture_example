@@ -7,12 +7,22 @@
 require.config({
     baseUrl : 'js/',
     paths: {
+
+        // vendor
         'modernizr': 'lib/modernizr/modernizr',
         'jquery': 'lib/jquery/jquery',
         'underscore': 'lib/underscore/underscore',
         'i18n': 'lib/requirejs-i18n/i18n',
+
+        // locale-specific settings
         'settings' : 'settings',
-        'core': 'core/core'
+
+        // core modules
+        'core': 'core/core',
+
+        // locale-specific modules
+        'search': 'modules/search/search'
+        
     },
 	i18n: {
 		locale: 'de_DE'
@@ -49,7 +59,7 @@ require([
 
         if (core) {
             console.log('Core loaded');
-            console.log(core);
+            console.log('core.utils.add(2,2) = ' + core.utils.add(2,2));
         }   
 
 });

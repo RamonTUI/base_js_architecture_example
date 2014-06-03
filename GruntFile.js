@@ -106,9 +106,14 @@ module.exports = function(grunt) {
 
 
 /* TASK DEFS --------------------------------------------------------------- */
-    grunt.registerTask('default', 'Default build and setup', function() { 
-    	grunt.log.writeln('Running default build and setup');
+    grunt.registerTask('setup', 'Default setup', function() { 
+    	grunt.log.writeln('Getting bower packages and copying locale files');
     	grunt.task.run(['bower:install', 'copy:default']);
+  	});
+
+    grunt.registerTask('default', 'Default build', function() { 
+    	grunt.log.writeln('Running default build and setup');
+    	grunt.task.run([]);
   	});
 
 };
